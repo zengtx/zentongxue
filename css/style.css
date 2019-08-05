@@ -1,0 +1,151 @@
+*{margin:0;padding:0;}
+a {color:inherit;text-decoration:none;}
+body,html{
+  /*overflow:hidden;*/
+  overflow-x:hidden;
+  height:100%;
+  font-size:16px;
+  font-family: 'Open Sans Condensed', sans-serif;
+  background:#0a0826;
+  color:#fff;
+}
+#wrap{
+  position:absolute;
+  left:0; top:0;
+  width:150%;
+  height:100%;
+  display:flex;
+  align-items:stretch;
+  margin:0 25%;
+}
+.hb {
+  position:relative;
+  width:25%;
+  z-index:1;
+  display:flex;
+  align-items:center;
+  z-index:2;
+  trasnform:scale(.97);
+}
+.c{
+  position:relative;
+  display:block;
+  max-width:90%;
+  top:-100px;
+}
+.c img {
+  position:relative;
+  display:block;
+  width:100%;
+  height:auto;
+  z-index:2;
+}
+.txt {
+  position:absolute;
+  top:100%; left:10%;
+  width:80%;
+  opacity:0;
+  padding:1em 0 0 1em;
+  border-left:1px solid;
+  z-index:1;
+  transform:scaleY(1) translateY(-50px);
+  transition:transform .2s, opacity .5s;
+}
+h1 {
+  font-size:1.2em;
+  font-weight:700;
+  text-transform:uppercase;
+}
+.hb:hover .txt {
+  opacity:1;
+  transform:scaleY(1) translateY(0);
+}
+.fullBg {
+  position:absolute;top:0;left:-35%;width:100%;height:100%;
+  opacity:0;
+  transition:transform .5s, opacity .5s;
+  transform:scale(1);
+  z-index:1;
+}
+.fullBg img {
+  width:100%;height:100%;
+  object-fit:cover;object-position:center;
+  opacity:.5;
+}
+.hb:hover + .fullBg {opacity:1;transform:scale(1.02);}
+.credits {
+  position:fixed;
+  bottom:0;right:0;
+  padding:1.5em;
+  font-size:.8em;
+  text-align:right;
+  font-style:italic;
+  opacity:.8;
+  transition:opacity .2;
+  z-index:3;
+}
+.credits:hover {
+  text-decoration:underline;
+  opacity:1;
+}
+
+
+
+/*头部*/
+.head{
+  width: 1200px;
+  margin: 0 auto;
+}
+ul { 
+float:left; 
+} 
+li { 
+float:left; 
+list-style:none; 
+} 
+
+.title{
+  font-size: 7.4em;
+  font-weight:; 800;
+  float: right;
+  margin: 0px;
+  padding: 0;
+}
+.aboutme{
+  width: 1200px;
+  margin: 0 auto;
+}
+.mywork{
+  margin: 0 auto;
+  width: 280px;
+  opacity:1;
+  mix-blend-mode:screen;/*滤色*/
+}
+
+/*作品*/
+
+.imgbox{ /*图片容器，务必有颜色*/
+  background-color: #0a0826;
+}
+.mywork{ /*色彩叠加模式 滤色：screen，正片叠底：multiply*/
+  mix-blend-mode: screen;
+}
+.worklist{
+  width: 1200px;
+  height: 640px;
+  margin: 0 auto;
+  display: -webkit-flex; /* Safari */
+  display: flex;
+  flex-direction: row ;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items:flex-start;
+}
+.item{
+  width: 380px;
+  margin: 10px;
+}
+
+.item-img{
+  width: 100%;
+}

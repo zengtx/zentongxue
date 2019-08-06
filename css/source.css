@@ -1,0 +1,43 @@
+
+h1{
+	color: #fff;
+	text-align: center;
+	align-items: center;
+	margin: 0 auto;
+	margin-top: 40px;
+}
+
+.allcontents{
+	width: 80%;
+	margin: 0 auto;
+}
+.box{
+	margin-top: 20px;
+	display: -webkit-flex; /* Safari */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items:flex-start;
+	
+}
+.itembox{
+	width: 24%;
+	margin: 5px;
+	margin-top: 20px; 
+}
+.facebox{
+	height: 320px;
+	overflow: hidden;
+	overflow-x: hidden;
+	display: flex;
+	justify-content: center;
+
+}
+.itemtitle{
+	font-size: 1.8em;
+	font-weight: 600;
+}
+hr{
+	margin: 5px;
+}

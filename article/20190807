@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+	<link rel="stylesheet" href="../css/article.css"> <!-- Resource style -->
+	<link rel="stylesheet" href="../css/nav.css">
+	<link rel="stylesheet" href="../css/nav-hidden.css">
+
+  	
+	<title>利用码云托管个人主页</title>
+</head>
+<body>
+		<!-- 汉堡菜单 -->
+	<div class="nav">
+	  <button class="btn-nav">
+	    <span class="icon-bar top"></span>
+	    <span class="icon-bar middle"></span>
+	    <span class="icon-bar bottom"></span>
+	  </button>
+	</div>
+
+	<div class="nav-content hideNav hidden">
+	  <ul class="nav-list">
+	  	<li class="nav-item"><a href="../index.html" class="item-anchor">HOME 首页</a></li>
+	    <li class="nav-item"><a href="#" class="item-anchor">MY NOTE 设计笔记（建设中）</a></li>
+	    <li class="nav-item"><a href="../source.html" class="item-anchor">SOURCE 资源导航（建设中）</a></li>
+	    <!-- <li class="nav-item"><a href="#" class="item-anchor">item 3</a></li> -->
+	    <li class="nav-item"><a href="http://zengtongxue.oss-cn-chengdu.aliyuncs.com/download/%E6%9B%BE%E9%AD%8F-%E8%AE%BE%E8%AE%A1%E5%B2%97-18508260455.pdf" class="item-anchor">ABOUT ME 我的简历</a></li>
+	    <hr style="margin-left: 50px;width: 400px;">
+	    <p style="font-size: 14px;margin-left: 50px;">Thanks for your watching</p>
+	    <p style="font-size: 14px;margin-left: 50px;">You could contact me by +86 185 0826 0455</p>
+	    <p style="font-size: 14px;margin-left: 50px;">799895183@qq.com</p>
+	  </ul>
+	</div>
+
+	<!-- 内容部分 -->
+	<main class="cd-main-content">
+		<div class="cd-fixed-bg cd-bg-1">
+			<div style="width: 100%;height: 100%;position: absolute;top: 0;left: 0;background: #000;opacity:0.6; "></div>
+			<h1>利用码云免费托管个人主页</h1>
+		</div> <!-- cd-fixed-bg -->
+
+		<div class="cd-scrolling-bg cd-color-2">
+			<div class="cd-container">
+				<p style="font-weight: 400; font-size: 18px;color: #aeaeae;">
+					我是一个设计工作从业者，也是一个设计类工作的学生。一直以来，拥有一个个人主页，来展示自己的日常工作、学习的记录、总结和成果是我所梦寐以求的事情；同时我也相信我并非个例。
+					<br>
+					<br>
+					为了实现这个诉求，我做了如下工作：1、对自己的页面需求进行整理，弄清楚自己究竟需要哪些功能，其中哪些是需求是迫切的，哪些并非那么迫切，为什么；2、为了实现这些功能我需要掌握什么样的技能，或者有哪些人可以帮到我，且不需要对方付出过多的时间和精力；3、实现需求后，我如何能够让别人方便地看到这一切；4、我所做的是否能够为其他人带来一些价值。
+					<br>
+					<br>
+				    当然，这篇文章并非要讨论我是如何学习并创建这个站点的，毕竟其中确也没有值得骄傲的技术。而是希望提供一个方案，让我们的从事设计工作的朋友能用更低成本甚至免费的方式获得一个属于自己的站点。
+				</p>
+				<br>
+				<h2>前期准备</h2>
+				<p>
+					<ul>
+						<li>首先你应该已经准备好了你的页面文件。</li>
+						<li>注册一个<a href="https://gitee.com/">码云</a>账户</li>
+					</ul>
+				</p>
+				<h2>创建仓库</h2>
+				在你的码云账户中创建一个仓库，仓库是用来放置你的代码和素材的地方。为你的网页创建一个仓库并将网页文件上传到仓库中去。
+				<img src="http://zengtongxue.oss-cn-chengdu.aliyuncs.com/images/article/%E5%88%9B%E5%BB%BA%E4%BB%93%E5%BA%93.png" alt="新建仓库">
+				<p style="text-align:center; margin:0 auto;"> 创建仓库</p>
+				<img src="http://zengtongxue.oss-cn-chengdu.aliyuncs.com/images/article/%E5%88%9B%E5%BB%BA%E4%BB%93%E5%BA%93.png" alt="新建仓库">
+				<p>根据自己的实际情况设置名称、地址等。下面看不懂的地方保持默认设置就好；是否开源我选择的公开， 不知道选择私有是否会影响访问。设置好后，点击下面的创建即可。</p>
+				<h2>上传文件</h2>
+				<img src="http://zengtongxue.oss-cn-chengdu.aliyuncs.com/images/article/WechatIMG716.png" alt="上传文件">
+				<p>创建好仓库后，你会得到这个页面（也可以在头像-个人主页中找到你的仓库）；蓝色框标注的部分是你仓库中的文件，其中有一些平台系统默认创建的文件，可以不用管它。红色框标注的地方可以创建新的文件夹、上传你的文件。按照你本地的文件目录创建文件夹，并将文件上传到对应的位置。</p>
+				<h2>让你的页面可以访问</h2>
+				<img src="http://zengtongxue.oss-cn-chengdu.aliyuncs.com/images/article/WX20190807-112923%402x.png" alt="设置页面">
+				<p>直接启用page，打开对应的地址，你就能访问你的页面了</p>
+			</div> <!-- cd-container -->
+			<!-- 点赞 -->
+
+	<article class="htmleaf-container" style="display: flex;justify-content:center;margin-top: 80px;">
+		<div id="container">
+			<div class="feed" id="feed1">
+			<div class="heart " id="like1" rel="like"></div>
+			<!-- <div class="likeCount" id="likeCount1">16</div> -->
+			</div>
+
+		</div>
+
+	</article>
+	
+	<script src="../js/jquery-1.11.0.min.js" type="text/javascript"></script>
+
+	<script>
+	$(document).ready(function()
+	{
+    
+	$('body').on("click",'.heart',function()
+    {
+    	
+    	var A=$(this).attr("id");
+    	var B=A.split("like");
+        var messageID=B[1];
+        var C=parseInt($("#likeCount"+messageID).html());
+    	$(this).css("background-position","")
+        var D=$(this).attr("rel");
+       
+        if(D === 'like') 
+        {      
+        $("#likeCount"+messageID).html(C+1);
+        $(this).addClass("heartAnimation").attr("rel","unlike");
+        
+        }
+        else
+        {
+        $("#likeCount"+messageID).html(C-1);
+        $(this).removeClass("heartAnimation").attr("rel","like");
+        $(this).css("background-position","left");
+        }
+
+
+    });
+
+
+	});
+	</script>
+		</div> <!-- cd-scrolling-bg -->
+
+	</main> <!-- cd-main-content -->
+
+
+
+<!-- 导航js -->
+<script src="https://www.jq22.com/jquery/2.1.1/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="js/jquery-2.1.1.min.js"><\/script>')</script>
+	<script>
+	$(window).load(function () {
+	    $('.btn-nav').on('click tap', function () {
+	        $('.nav-content').toggleClass('showNav hideNav').removeClass('hidden');
+	        $(this).toggleClass('animated');
+	    });
+	});
+	</script>
+</body>
+</html>

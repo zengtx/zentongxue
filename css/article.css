@@ -1,0 +1,227 @@
+/* -------------------------------- 
+
+Primary style
+
+-------------------------------- */
+html * {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body, html {
+  /* important */
+  height: 100%;
+  margin: 0 auto;
+  background:#0a0826;
+}
+
+a {
+  color: #0485d4;
+  text-decoration: none;
+  font-weight: 400;
+  text-decoration: underline;
+}
+
+/* -------------------------------- 
+
+Modules - reusable parts of our design
+
+-------------------------------- */
+.cd-container {
+  /* this class is used to give a max-width to the element it is applied to, and center it horizontally when it reaches that max-width */
+  width: 90%;
+  max-width: 768px;
+  margin: 0 auto;
+}
+.cd-container::after {
+  /* clearfix */
+  content: '';
+  display: table;
+  clear: both;
+}
+
+/* -------------------------------- 
+
+Main components 
+
+-------------------------------- */
+.cd-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  z-index: 2;
+}
+
+
+
+
+.cd-main-content {
+  /* you need to assign a min-height to the main content so that the children can inherit it*/
+  height: 60%;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  top: 0;
+  z-index: 1;
+}
+
+.cd-fixed-bg {
+  position: relative;
+  top: 0;
+  margin: 0 auto;
+  min-height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  z-index: 1;
+}
+.cd-fixed-bg h1, .cd-fixed-bg h2 {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  bottom: auto;
+  right: auto;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -o-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  width: 90%;
+  max-width: 1170px;
+  text-align: center;
+  font-size: 30px;
+  font-size: 1.875rem;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  color: white;
+}
+.cd-fixed-bg.cd-bg-1 {
+  margin:0 auto;
+  background-image: url("http://zengtongxue.oss-cn-chengdu.aliyuncs.com/images/article/domenico-loia-hGV2TfOh0ns-unsplash.jpg");
+
+}
+
+.cd-fixed-bg.cd-bg-2 {
+  background-image: url("../img/cd-background-2.jpg");
+}
+.cd-fixed-bg.cd-bg-3 {
+  background-image: url("../img/cd-background-3.jpg");
+}
+.cd-fixed-bg.cd-bg-4 {
+  background-image: url("../img/cd-background-4.jpg");
+}
+@media only screen and (min-width: 768px) {
+  .cd-fixed-bg h1, .cd-fixed-bg h2 {
+    font-size: 36px;
+  }
+}
+@media only screen and (min-width: 1170px) {
+  .cd-fixed-bg {
+    background-attachment: fixed;
+  }
+  .cd-fixed-bg h1, .cd-fixed-bg h2 {
+    font-size: 48px;
+    font-weight: 300;
+  }
+}
+
+.cd-scrolling-bg {
+  position: relative;
+  min-height: 100%;
+  padding: 4em 0;
+  line-height: 1.6;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+  z-index: 2;
+}
+.cd-scrolling-bg.cd-color-1 {
+  background-color: #3d3536;
+  color: #a6989a;
+}
+.cd-scrolling-bg.cd-color-2 {
+  background-color: #fff;
+  color: #3d3536;
+}
+.cd-scrolling-bg.cd-color-3 {
+  background-color: #b4d7a8;
+  color: #3d3536;
+}
+@media only screen and (min-width: 768px) {
+  .cd-scrolling-bg {
+    padding: 8em 0;
+    font-size: 20px;
+    font-size: 1.25rem;
+    line-height: 2;
+    font-weight: 300;
+  }
+}
+img{
+  width: 100%;
+}
+
+
+
+/*点赞*/
+ #container 
+    .heart {
+      background: url(http://zengtongxue.oss-cn-chengdu.aliyuncs.com/images/article/web_heart_animation.png);
+      background-position: left;
+      background-repeat: no-repeat;
+      height: 120px;
+      width: 120px;
+      cursor: pointer;
+      position: absolute;
+      /*left:-14px;*/
+        background-size:2900%;
+    }
+    .heart:hover, .heart:focus{
+    background-position: right;
+  }
+
+    @-webkit-keyframes heartBlast {
+    0% {
+      background-position: left;
+  }
+  100% {
+      background-position: right;
+  }
+  }
+
+  @keyframes heartBlast {
+      0% {
+      background-position: left;
+  }
+  100% {
+      background-position: right;
+  }
+  }
+
+  .heartAnimation {
+    display: inline-block;
+    -webkit-animation-name: heartBlast;
+    animation-name: heartBlast;
+    -webkit-animation-duration: .8s;
+    animation-duration: .8s;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+    -webkit-animation-timing-function: steps(28);
+    animation-timing-function: steps(28);
+    background-position: right;
+    }
+    .feed p{font-family: "Microsoft YaHei",'Georgia', Times, Times New Roman, serif; font-size: 25px;}
+    .feed{clear: both; margin-bottom: :20px; height: 150px; position: relative;}
+    a{color: #7ac9ed;}
+    p{margin: 0px; padding: 0px;}
+    .likeCount{
+     /*margin-top: 32px;
+     margin-left: 68px;
+     font-size: 25px;*/
+     color: #999999}

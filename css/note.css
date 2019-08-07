@@ -773,7 +773,7 @@ input:checked + .pic .allstars {
   width: 80%;
   background-color: white;
   margin-top: 32%;
-  z-index: 99;
+  z-index: 3;
   border-radius: 4px;
   display: flex;
   flex-direction: column;
